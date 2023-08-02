@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jinja Counter Example</title>
+</head>
+<body>
+{% set items = [1, 12, 31, 98, 153, 103] %}
+{% set counter = namespace(value=0) %}
+
+{% for item in items %}
+    {% set counter.value = counter.value + 1 %}
+	<p>Item {{ item }} ({{ counter.value }})</p>
+
+{% endfor %}
+
+<p>Total Items: {{ counter.value }}</p>
+
+
+</body>
+</html>

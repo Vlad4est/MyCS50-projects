@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Result
+{% endblock %}
+
+{% block main %}
+{%if count == 0 %}
+<p>The password   was never hacked. You are safe! Click <a href="{{ url_for("index") }}">here</a> to check another password.</p>
+{% else %}
+<p>The password  was hacked {{ count }} times. You must change your password! Click <a href="{{ url_for("generator") }}">here</a> to go generate a new password.</p>
+{% endif %}
+{% endblock %}

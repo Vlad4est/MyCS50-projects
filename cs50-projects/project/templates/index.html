@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Secure Password Checker
+{% endblock %}
+
+{% block main %}
+<form action="/" method="post">
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+        <input type="checkbox" class="form-check-input" name="togglePassword" id="togglePassword">
+        <label class="form-check-label" for="togglePassword">Show Password</label>
+    </div>
+    <button class="btn btn-primary" type="submit">Check Password</button>
+</form>
+
+<script>
+    document.getElementById("togglePassword").addEventListener("click", function () {
+        const password = document.getElementById("password")
+        if (password.type === "password") {
+            password.type = "text"
+        }
+        else {
+            password.type = "password"
+        }
+    });
+</script>
+{% endblock %}

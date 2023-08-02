@@ -1,0 +1,81 @@
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+
+.container {
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #f2f2f2;
+}
+#h2-quizz
+{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+}
+
+#quiz-form {
+  margin-top: 2rem;
+}
+
+#contact-form {
+  margin-top: 2rem;
+}
+
+#nameInput, #emailInput, #messageInput {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #f2f2f2;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+#messageInput {
+  height: 10rem;
+}
+
+#submitBtn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#submitBtn:hover {
+  background-color: #0056b3;
+}

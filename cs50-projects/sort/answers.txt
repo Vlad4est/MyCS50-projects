@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: It solves the sorted file very fast , but the reversed and random files take as long as sort3 algoritm.
+
+sort2 uses: merge sort
+
+How do you know?: It sorts all files fast no matter the type of file (sorted, reversed, random) or the number of elements in file.
+
+sort3 uses: selection sort
+
+How do you know?: It runs the 3 files (sorted, reversed, random) in about same time and it is the slowest (even for sorted array). About 3 seconds for 50.000 number files

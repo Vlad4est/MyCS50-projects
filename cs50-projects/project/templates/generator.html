@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Password Generator
+{% endblock %}
+
+{% block main %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form action="/generator" method="post">
+          <div class="form-group">
+            <label for="numberInput">Minimum password length</label>
+            <input type="number" class="form-control form-control-sm" id="passwordLenght" name="passwordLenght" min="0" required>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="includeNumber" name="includeNumber">
+            <label class="form-check-label" for="includeNumber">Include numbers</label>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="includeSpecial" name="includeSpecial">
+            <label class="form-check-label" for="includeSpecial">Include special characters</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Generate Password</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        {% if password %}
+          Password generated: {{ password }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endblock %}
